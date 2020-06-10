@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+  <title>Basic Corporate UI 4.0.0 Alpha Template</title>
+  <meta charset="utf-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="http://localhost:8080/themes/scania-theme/dist/scania-theme.js"></script>
+  <script src="http://localhost:8080/components/dist/corporate-ui.js"></script>
+</head>
+
+<body>
+
+  <c-theme name='scania' global='true'></c-theme>
+  <!-- <c-theme></c-theme> -->
+
+  <c-header site-name='Application' short-name='App'>
+    <a href='/abc.html' slot='items'>ABC</a>
+    <a href='/tes.html' slot='items'>TES</a>
+  </c-header>
+
+  <!-- <c-dealer-header site-name="Bilmetro" short-name="Bilmetro" site-url="https://scania.github.io/" logo="https://scania.github.io/corporate-ui-docs/images/bilmetro-logo.png">
+    <a href="/" slot="items">Configurator</a>
+  </c-dealer-header> -->
+
+  <c-navigation>
+    <a href='/' slot='primary-items' active=''>home</a>
+    <a href='/about' slot='primary-items' class="parent">about</a>
+    <a href='/more' slot='secondary-items'>more</a>
+    <div class='dropdown' slot='secondary-items'>
+      <a href='' class='dropdown-toggle nav-item' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>user</a>
+  
+      <div class='dropdown-menu'>
+        <a class='dropdown-item' href='#'>Action</a>
+        <a class='dropdown-item' href='#'>Another action</a>
+        <a class='dropdown-item' href='#'>Something else here</a>
+      </div>
+    </div>
+
+    <c-navigation slot='sub' caption='About' target='/about' active=''>
+      <a href='/about' slot='primary-items' active=''>About 1</a>
+      <a href='/about2' slot='primary-items'>About 2</a>
+      <a href='/about3' slot='secondary-items'>About 3</a>
+    </c-navigation>
+  </c-navigation>
+
+  <c-content>
+    <section>
+      <h1>Hello World!</h1>
+      
+      <c-table></c-table>
+      
+      
+    </section>
+  </c-content>
+
+  <c-footer>
+      
+    <a href="/cookies" slot="items">Cookies</a>
+    <a href="/contact-us" slot="items">Contact us</a>
+  </c-footer>
+
+  <script>
+
+    function testEdit(msg) {
+      alert(JSON.stringify(msg.detail));
+    }
+
+    const el = document.querySelector('c-table');
+
+    el.hasEdit = true;
+    // el.hasDelete = true;
+    el.addEventListener('optEdit', testEdit)
+    // el.addEventListener('optDelete', testDelete)
+
+    const arr = [
+      {
+        "id":1,
+        "name" : "Harru",
+        "lastname": "Haru",
+        "email": "haru@ka.com"
+      },
+      {
+        "id":2,
+        "name" : "Una",
+        "lastname": "Mina",
+        "email": "uamian@asdf.com"
+      },
+      {
+        "id":3,
+        "name" : "Mika",
+        "lastname": "Ella",
+        "email": "asasa@eee.com"
+      },
+        
+    ]
+
+    function testDelete(msg) {
+      let newArr = [...el.content];
+      newArr.forEach(function(item, index){
+        if(item.id == msg.detail.id) {
+          newArr.splice(index, 1)
+        }
+      })
+      el.content = newArr;
+    }
+
+    el.header = [
+      {
+        key: "name",
+        description: "First Name",
+      },
+      {
+        key: "lastname",
+        description: "Last Name",
+      },
+      {
+        key: "email",
+        description: "Email",
+      }
+    ]
+    el.content = arr
+  </script>
+
+
+</body>
+</html>

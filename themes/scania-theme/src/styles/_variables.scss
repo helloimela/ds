@@ -1,0 +1,293 @@
+// Global colors
+$white:         #fafafa;
+$black:         #2D2926;
+$blue:          #041e42;
+$indigo:        #6610f2;
+$purple:        #6f42c1;
+$pink:          #e83e8c;
+$red:           #D6001C;
+$orange:        #E35205;
+$yellow:        #ffc107;
+$green:         #2C5234;
+$teal:          #20c997;
+$cyan:          #17a2b8;
+
+// $gray:          #97999B;
+
+// Interaction colors
+$primary:       #033a6a;
+$secondary:     #fff;
+$success:       #44a878;
+$info:          #4a8ba4;
+$warning:       #f2855f;
+$danger:        #CC1040;
+$light:         #C8C9C7;
+$dark:          #53565A;
+
+// Theme colors
+$theme-01:      $blue;
+$theme-02:      $white;
+$theme-03:      $red;
+
+// Tint colors
+// $primary-01:    #062b4a;
+// $primary-02:    #062b4a;
+// $primary-04:    #92bbf3;
+
+// $secondary-01:  #999;
+// $secondary-02:  #999;
+// $secondary-04:  #fff;
+
+$success-01:   #f2f9f5;
+$success-02:   #dff0d8;
+$success-03:   #d6e9c6;
+$success-04:   #3c763d;
+
+$info-01:      #ebf6fb;
+$info-02:      #d9edf7;
+$info-03:      #bce8f1;
+$info-04:      #31708f;
+
+$warning-01:   #fffced;
+$warning-02:   #fcf8e3;
+$warning-03:   #faebcc;
+$warning-04:   #8a6d3b;
+
+$danger-01:    #faeeed;
+$danger-02:    #f2dede;
+$danger-03:    #ebccd1;
+$danger-04:    #a94442;
+
+$light-01:     #f8f9fa;
+$light-02:     #efefef;
+$light-03:     #e9ecef;
+$light-04:     #ced4da;
+
+$dark-01:      #94999d;
+$dark-02:      #6c757d;
+$dark-03:      #212529;
+
+// Gray colors
+// $gray-100:      #f8f9fa;
+// $gray-200:      #e9ecef;
+// $gray-300:      #dee2e6;
+// $gray-400:      #ced4da;
+// $gray-500:      #adb5bd;
+// $gray-600:      #6c757d;
+// $gray-700:      #495057;
+// $gray-800:      #343a40;
+// $gray-900:      #212529;
+
+// Global Font variables
+$font-size-base:              1.4rem;
+$font-weight-normal:          400;
+$font-weight-base:            $font-weight-normal;
+$line-height-base:            1.5;
+
+$font-family-sans-serif:      'Scania Sans Semi Condensed', 'Scania Sans Condensed', Arial, Helvetica, sans-serif;
+$font-family-monospace:       $font-family-sans-serif;
+$font-family-base:            $font-family-sans-serif;
+
+$h1-font-size:                $font-size-base * 1.72;
+$h2-font-size:                $font-size-base * 1.43;
+$h3-font-size:                $font-size-base * 1.29;
+$h4-font-size:                $font-size-base * 1.14;
+$h5-font-size:                $font-size-base;
+$h6-font-size:                $font-size-base;
+
+$headings-font-family:        'Scania Sans Semi Condensed', Arial, Helvetica, sans-serif;
+$headings-color:              $theme-01;
+
+$body-bg:                     $white;
+$body-color:                  $dark;
+
+$link-color:                  $info;
+$link-color-hover:            $info;
+$link-color-active:           $primary;
+$link-color-disabled:         $light;
+
+// Global Article Font
+// TODO: Disabled article for now
+// $font-size-article:           1.8rem;
+// $font-family-article:         'Scania Sans', Arial, Helvetica, sans-serif;
+
+// $h1-font-size-article:        $font-size-article * 5;
+// $h2-font-size-article:        $font-size-article * 3.33;
+// $h3-font-size-article:        $font-size-article * 1.94;
+// $h4-font-size-article:        $font-size-article * 1.33;
+// $h5-font-size-article:        $font-size-article;
+// $h6-font-size-article:        $font-size-article;
+
+// Global Border settings
+$border-radius:               3px;
+$border-color:                $light;
+
+// Modal
+$modal-padding:               15px;
+$modal-border-color:          $light-03;
+
+// Table
+$table-border-color:          $border-color;
+$table-thead-border-color:    $blue;
+$table-thead-bg-color:        $blue;
+
+//Pagination
+$pagination-bg-color:         transparent;
+
+// List-groups
+$border-radius-list-group:    $border-radius;
+
+// Lists
+$global-colors: (
+  'blue':       $blue,
+  // 'indigo':     $indigo,
+  // 'purple':     $purple,
+  // 'pink':       $pink,
+  'red':        $red,
+  'orange':     $orange,
+  // 'yellow':     $yellow,
+  'green':      $green,
+  // 'teal':       $teal,
+  // 'cyan':       $cyan,
+  'white':      $white,
+  'black':      $black
+);
+
+$theme-colors: (
+  'theme-01': $theme-01,
+  'theme-02': $theme-02,
+  'theme-03': $theme-03
+);
+
+// $primary-colors: (
+//   'primary-01': $primary-01,
+//   'primary-02': $primary-02,
+//   'primary-03': $primary-03
+// );
+
+// $secondary-colors: (
+//   'secondary-01': $secondary-01,
+//   'secondary-02': $secondary-02,
+//   'secondary-03': $secondary-03
+// );
+
+$success-colors: (
+  'success-01': $success-01,
+  'success-02': $success-02,
+  'success-03': $success-03,
+  'success-04': $success-04
+);
+
+$info-colors: (
+  'info-01': $info-01,
+  'info-02': $info-02,
+  'info-03': $info-03,
+  'info-04': $info-04
+);
+
+$warning-colors: (
+  'warning-01': $warning-01,
+  'warning-02': $warning-02,
+  'warning-03': $warning-03,
+  'warning-04': $warning-04
+);
+
+$danger-colors: (
+  'danger-01': $danger-01,
+  'danger-02': $danger-02,
+  'danger-03': $danger-03,
+  'danger-04': $danger-04
+);
+
+$light-colors: (
+  'light-01': $light-01,
+  'light-02': $light-02,
+  'light-03': $light-03,
+  'light-04': $light-04
+);
+
+$dark-colors: (
+  'dark-01': $dark-01,
+  'dark-02': $dark-02,
+  'dark-03': $dark-03
+);
+
+// $gray-colors: (
+//   'gray-01': $gray-100,
+//   'gray-02': $gray-200,
+//   'gray-03': $gray-300,
+//   'gray-04': $gray-400,
+//   'gray-05': $gray-500,
+//   'gray-06': $gray-600,
+//   'gray-07': $gray-700,
+//   'gray-08': $gray-800,
+//   'gray-09': $gray-900
+// );
+
+$interaction-colors: (
+  'primary':    $primary,
+  'secondary':  $secondary,
+  'success':    $success,
+  'info':       $info,
+  'warning':    $warning,
+  'danger':     $danger
+);
+
+$extra-colors: (
+  'light':      $light,
+  'dark':       $dark
+);
+
+$element-colors: (
+  'headings-color': $headings-color,
+  'link-color': $link-color,
+  'link-color-hover': $link-color-hover,
+  'link-color-active': $link-color-active,
+  'link-color-disabled': $link-color-disabled
+);
+
+$heading-sizes: (
+  'h1': $h1-font-size,
+  'h2': $h2-font-size,
+  'h3': $h3-font-size,
+  'h4': $h4-font-size,
+  'h5': $h5-font-size,
+  'h6': $h6-font-size
+);
+
+// $heading-sizes-article: (
+//   'h1': $h1-font-size-article,
+//   'h2': $h2-font-size-article,
+//   'h3': $h3-font-size-article,
+//   'h4': $h4-font-size-article,
+//   'h5': $h5-font-size-article,
+//   'h6': $h6-font-size-article
+// );
+
+$all-colors: (
+  'global':       $global-colors,
+  'theme':        $theme-colors,
+  'interaction':  $interaction-colors,
+  'extra':        $extra-colors,
+  // 'primary':      $primary-colors,
+  // 'secondary':    $secondary-colors,
+  'success':      $success-colors,
+  'info':         $info-colors,
+  'warning':      $warning-colors,
+  'danger':       $danger-colors,
+  'light':        $light-colors,
+  'dark':         $dark-colors,
+);
+
+// Merge all colors in to theme-colors and
+// let "root.scss" render the css variables
+@each $name, $type in $all-colors {
+  $theme-colors: map-merge($theme-colors, $type);
+}
+
+// Interaction lists
+$interaction-types: success, info, warning, danger;
+$interaction-types2: secondary, light;
+$interaction-types3: primary, dark;
+
+$types: join(join($interaction-types, $interaction-types2), $interaction-types3);

@@ -1,0 +1,72 @@
+@import '../variables';
+@import '../mixins';
+
+@mixin link {
+  color: $link-color;
+  color: Var(--link-color);
+  text-decoration: underline;
+  text-decoration: Var(--link-decoration, underline);
+  background-color: inherit;
+  background-color: Var(--link-bg, inherit);
+
+  &:hover,
+  &:active,
+  &.active,
+  &[active]:not([active="false"]) {
+    color: $link-color-hover;
+    color: Var(--link-color-hover);
+    text-decoration: none;
+    text-decoration: Var(--link-decoration-hover, none);
+    background-color: inherit;
+    background-color: Var(--link-bg-hover, inherit);
+  }
+
+  &:active,
+  &.active {
+    color: $link-color-active;
+    color: Var(--link-color-active);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headings-font-family;
+  color: $headings-color;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+@include renderMap($heading-sizes, 'font-size');
+
+h5,
+h6 { font-family: $font-family-base; }
+h6 { font-style: italic; }
+
+a {
+  @include link;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+// article {
+//   font-family: $font-family-article;
+//   font-size: $font-size-article;
+
+//   @include renderMap($heading-sizes-article, 'font-size');
+// }
+
+.lead {
+  font-size: 1.8rem;
+}
+
+label {
+  font-weight: bold;
+  color: $dark-01;
+  color: Var(--dark-01);
+}
