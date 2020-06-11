@@ -6,7 +6,7 @@
 ![](https://img.shields.io/github/license/scania/corporate-ui.svg?style=flat)
 [![Available components](https://img.shields.io/badge/Available%20components-digitaldesign.scania.com-orange)](https://digitaldesign.scania.com/components)
 
-# Corporate UI
+# Desing System Components
 
 **Demo page**
 
