@@ -2,9 +2,7 @@
 [![Github release](https://img.shields.io/github/v/tag/scania/scania-theme.svg?label=release&color=1081C2)](https://github.com/scania/scania-theme/releases)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/scania/scania-theme/Node%20CI)
 
-### Test for design system
-
-# Scania Theme
+# Scania Theme Design System
 
 Scania theme is a package to style Scania looks and feel in the [Corporate UI 4.0 setup](https://github.com/scania/corporate-ui/).
 
