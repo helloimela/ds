@@ -23,7 +23,7 @@
               "src/assets",
               "src/404.html",
               "src/.nojekyll",
-              "_redirects"
+              "src/_redirects"
             ],
             "styles": [
               "src/styles.css"
